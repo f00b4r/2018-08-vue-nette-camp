@@ -6,8 +6,16 @@
 	<title>{ifset title}{include title|stripHtml} | {/ifset}Nette Sandbox</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	{* <link rel="stylesheet" href="{$basePath}/css/style.css"> *}
 	{block head}{/block}
+
+
+<script n:syntax="double">
+window.__APP = {
+    baseUrl: {{$baseUrl}}
+}
+</script>
 </head>
 
 <body>
